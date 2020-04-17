@@ -197,6 +197,7 @@ class VirtualMachinesOperations(object):
             raw=True,
             **operation_config
         )
+        
 
         def get_long_running_output(response):
             deserialized = self._deserialize('VirtualMachineCaptureResult', response)
